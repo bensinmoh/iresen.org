@@ -1,0 +1,19 @@
+# TEAM
+
+    IRESEN
+    www.iresen.org
+
+    Author : Mouhcine BENMEZIANE
+        Facebook : @BenSinMoh
+        Twitter : @BenSinMoh
+        Instagram : @BenSinMoh
+        GitHub : @BenSinMoh
+
+# THANKS
+
+    # Website developed for the Moroccan Research Institute for Solar Energy and New Energies (IRESEN)
+
+# TECHNOLOGY
+
+    HTML5, CSS3, Javascript
+    Modernizr, Normalize.css, Google Fonts, Google Analytics, JQuery

@@ -1,0 +1,49 @@
+
+/* RESETS */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONTS */
+$main-font-family: 'Roboto', sans-serif; :root{--main-font-family: #{$main-font-family};}
+$accent-font-family: 'Poppins', sans-serif; :root{--accent-font-family: #{$accent-font-family};}
+
+/* COLOR THEME */
+$primaryColor: #3368C6; :root{--primaryColor: #{$primaryColor};}
+
+$secondaryColor: #18336C; :root{--secondaryColor: #{$secondaryColor};}
+
+$textColor: #788AAF; :root{--textColor: #{$textColor};}
+
+$accentColor: #0884B5; :root{--accentColor: #{$accentColor};}
+
+$lightGray: #F9F9F9; :root{--lightGray: #{$lightGray};}
+$lightBlue: #F5F9FD; :root{--lightBlue: #{$lightBlue};}
+
+$darkCharcoal: #333333; :root{--darkCharcoal: #{$darkCharcoal};}
+
+/* SIZING VARIABLES */
+$main-font-size: 1em; :root{--main-font-size: #{$main-font-size};}
+$main-line-spacing: 1.5; :root{--main-line-spacing: #{$main-line-spacing};}
+
+/* SETS */
+*{
+  scroll-behavior: smooth;
+
+  &::selection{
+    color: white;
+    background-color: $primaryColor;
+  }
+}
+
+html {
+  font-size: $main-font-size;
+  line-height: $main-line-spacing;
+  font-family: $main-font-family;
+}
+
+.hidden{
+  display: none !important;
+}

@@ -1,0 +1,50 @@
+/* THRESHOLDS */
+$maxSizePhone: 480px; :root{--maxSizePhone: #{$maxSizePhone};}
+$maxSizeTablet: 768px; :root{--maxSizeTablet: #{$maxSizeTablet};}
+$maxSizeLarge: 992px; :root{--maxSizeLarge: #{$maxSizeLarge};}
+$minSizeDesktop: 1200px; :root{--minSizeDesktop: #{$minSizeDesktop};}
+
+
+/* MEDIA QUERIES MIXINS */
+@mixin isPhone {
+	@media screen and (max-width: #{$maxSizePhone}) {
+		@content;
+	}
+}
+
+@mixin isTablet {
+	@media screen and (max-width: #{$maxSizeTablet}) {
+		@content;
+	}
+}
+
+@mixin isLarge {
+	@media screen and (max-width: #{$maxSizeLarge}) {
+		@content;
+	}
+}
+
+@mixin isDesktop {
+	@media screen and (max-width: #{$minSizeDesktop}) {
+		@content;
+	}
+}
+
+@mixin isInfinite {
+	@media screen and (min-width: #{$minSizeDesktop}) {
+		@content;
+	}
+}
+
+/* CONTAINER */
+$containerWidth: $minSizeDesktop; :root{--containerWidth: #{$containerWidth};}
+
+.container{
+	max-width: $containerWidth;
+	margin: auto;
+	padding: 0 3.5rem;
+
+	@include isPhone{
+		padding: 0 2rem;
+	}
+}

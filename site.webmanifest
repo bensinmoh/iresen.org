@@ -1,0 +1,20 @@
+{
+  "name": "IRESEN's Website",
+  "short_name": "IRESEN",
+  "icons": [
+    {
+    "src": "images/icons/android-chrome-192x192.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  },
+  {
+    "src": "images/icons/android-chrome-256x256.png",
+    "type": "image/png",
+    "sizes": "256x256"
+  }
+],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#18336C",
+  "theme_color": "#3368C6",
+  "display": "standalone"
+}
