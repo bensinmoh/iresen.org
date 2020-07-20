@@ -42,6 +42,7 @@ $light-border-color : #EAEFF5; :root{--light-border-color: #{$light-border-color
 *{
   scroll-behavior: smooth;
 
+
   &::selection{
     color: white;
     background-color: $primaryColor;

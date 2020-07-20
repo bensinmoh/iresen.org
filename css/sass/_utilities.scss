@@ -36,6 +36,30 @@
   }
 }
 
+%section-padding{
+  padding: 4rem 0;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.section-title{
+  text-align: center;
+  font-size: 2rem;
+  color: $secondaryColor;
+  margin-bottom: 2rem;
+}
+
+.section-subtitle{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .25rem;
+  color: $primaryColor;
+  margin-bottom: .5rem;
+}
+
 .primary-colored{
   background-color: $primaryColor !important;
 }
