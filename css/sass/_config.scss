@@ -37,6 +37,7 @@ $transition-timing : .2s; :root{--transition-timing: #{$transition-timing};}
 /* SHAPES */
 $border-radius : .2rem; :root{--border-radius: #{$border-radius};}
 $light-border-color : #EAEFF5; :root{--light-border-color: #{$light-border-color};}
+$border-line : 1px solid $light-border-color;
 
 /* SETS */
 *{

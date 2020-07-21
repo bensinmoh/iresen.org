@@ -21,7 +21,34 @@ if (localStorage.getItem('cookieConsentIRESEN') == "false") {
 
 // Slick Sliders
 
-$(document).ready(function(){
+$(document).ready(function(){ // Alliances
+  $('.alliances-logos').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    variableWidth: true,
+    responsive: [{
+      breakpoint: parseInt(computedStyle.getPropertyValue('--maxSizeLarge')),
+      settings: {
+        slidesToShow: 5
+      }
+    }, {
+      breakpoint: parseInt(computedStyle.getPropertyValue('--maxSizeTablet')),
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: parseInt(computedStyle.getPropertyValue('--maxSizePhone')),
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+});
+
+$(document).ready(function(){ // News
   $('.recent-news').slick({
     slidesToShow: 3,
     slidesToScroll: 1,

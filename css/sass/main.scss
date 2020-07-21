@@ -127,7 +127,7 @@ footer{
         font-weight: 500;
         cursor: pointer;
         z-index: 2;
-        border-left: 1px solid $light-border-color;
+        border-left: $border-line;
         border-top-right-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
         transition: all $transition-timing ease-in-out;
@@ -158,7 +158,7 @@ footer{
       flex-direction: row;
       padding-right: 2rem;
       padding-left: 2rem;
-      border-right: 1px solid $light-border-color;
+      border-right: $border-line;
       align-items: center;
 
       &:first-child{
@@ -206,7 +206,7 @@ footer{
 
 .footer-nav{
   padding: 2rem 0;
-  border-top: 1px solid $light-border-color;
+  border-top: $border-line;
 
   .container{
     display: flex;
@@ -218,7 +218,7 @@ footer{
       width: 100%;
       padding-right: 2rem;
       padding-left: 2rem;
-      border-right: 1px solid $light-border-color;
+      border-right: $border-line;
 
       &:first-child{
         padding-left: 0;
@@ -325,7 +325,7 @@ footer{
       }
 
       &:not(:last-child){
-        border-bottom: 1px solid $light-border-color;
+        border-bottom: $border-line;
       }
 
       &:not(:first-child){
@@ -354,7 +354,7 @@ footer{
 
 .footer-signature{
   padding: 2rem 0;
-  border-top: 1px solid $light-border-color;
+  border-top: $border-line;
 
   .container{
     display: flex;
@@ -423,6 +423,54 @@ footer{
 
       p{
         margin-bottom: .5rem;
+      }
+    }
+  }
+}
+
+/* Alliances */
+
+.section-alliances{
+  border-bottom: $border-line;
+
+  .alliances{
+    color: white;
+    background-color: $primaryColor;
+    padding: 2rem 2rem 2rem 10rem;
+    width: 40%;
+    min-width: 35rem;
+
+    @include isTablet{
+      width: 100%;
+      padding: 2rem;
+
+      h3, h2{
+        text-align: center;
+      }
+    }
+
+    h3, h2{
+      color: white;
+      display: block;
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  .container{
+    padding: 2rem 0;
+  }
+
+  a{
+    padding: 0 1rem;
+
+    img{
+      max-height: 4rem;
+      filter: grayscale(100%) opacity(65%);
+      transition: filter $transition-timing ease-in-out;
+
+      &:hover{
+        filter: unset;
       }
     }
   }
