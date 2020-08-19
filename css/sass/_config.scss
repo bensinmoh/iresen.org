@@ -31,6 +31,8 @@ $main-font-size: 15px; :root{--main-font-size: #{$main-font-size};}
 $main-line-height: 24px; :root{--main-line-height: #{$main-line-height};}
 $main-font-weight: 400; :root{--main-font-weight: #{$main-font-weight};}
 
+$overlapping-gap: 4rem; :root{--overlapping-gap: #{$overlapping-gap};}
+
 /* ANIMATIONS */
 $transition-timing : .2s; :root{--transition-timing: #{$transition-timing};}
 
@@ -38,6 +40,7 @@ $transition-timing : .2s; :root{--transition-timing: #{$transition-timing};}
 $border-radius : .2rem; :root{--border-radius: #{$border-radius};}
 $light-border-color : #EAEFF5; :root{--light-border-color: #{$light-border-color};}
 $border-line : 1px solid $light-border-color;
+
 
 /* SETS */
 *{

@@ -428,21 +428,172 @@ footer{
   }
 }
 
+/* Contact */
+
+.section-contact{
+  background-color: $lightBlue;
+  position: relative;
+  z-index: 1;
+
+  .contact-background{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    z-index: -88;
+    position: absolute;
+
+    > div{
+      height: 100%;
+      width: 100%;
+
+      &:last-child{
+        padding: $overlapping-gap 0;
+      }
+    }
+
+    .contact-background-image{
+      background-image: url(../../images/iresen-interior.jpg);
+      background-size: cover;
+      background-position: right;
+    }
+
+    @include isTablet{
+      display: none;
+    }
+  }
+
+  .form-holder{
+    background-color: white;
+    height: 100%;
+    margin-left: -$overlapping-gap;
+    background-image: url(../../images/footer-worldmap-background.svg);
+    background-size: 100rem;
+    background-position: center;
+  }
+
+  .container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: unset;
+    padding: $overlapping-gap 0;
+    z-index: 3;
+
+    div{
+      width: 100%;
+    }
+
+    .contact-form-wrapper{
+      padding: $overlapping-gap 0;
+
+      h3{
+        text-align: left;
+      }
+
+      h2{
+        text-align: left;
+      }
+
+      @include isDesktop{
+        padding-right: $overlapping-gap;
+      }
+
+      @include isTablet{
+        padding: $overlapping-gap;
+      }
+    }
+
+    @include isTablet{
+      flex-direction: column;
+      background-color: white;
+      background-image: url(../../images/footer-worldmap-background.svg);
+      background-size: 100rem;
+      background-position: center;
+      padding: 0;
+    }
+
+    .ifTimg{
+
+      @include isTablet{
+        height: 20rem;
+        background-image: url(../../images/iresen-interior.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @include isTablet{
+      display: flex;
+      flex-direction: column;
+    }
+
+    textarea, button{
+      grid-column: span 2;
+    }
+
+    textarea{
+      min-height: 5rem;
+      resize: vertical;
+    }
+
+    input, textarea{
+      padding: .75rem;
+      background-color: $lightBlue;
+      border: $border-line;
+      color: $darkCharcoal;
+
+      &:focus{
+        background-color:white;
+        border: 1px solid $primaryColor;
+      }
+
+      &::placeholder{
+        color: $textColor;
+      }
+    }
+
+    button{
+      padding: .75rem 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid $primaryColor;
+      border-radius: $border-radius;
+      cursor: pointer;
+      transition: all $transition-timing ease-in-out;
+      background-color: $primaryColor;
+      color: white;
+      width: 100%;
+    }
+  }
+}
+
 /* Alliances */
 
 .section-alliances{
   border-bottom: $border-line;
+  z-index: 6;
+  position: relative;
 
   .alliances{
     color: white;
     background-color: $primaryColor;
     padding: 2rem 2rem 2rem 10rem;
     width: 40%;
-    min-width: 35rem;
+    min-width: 37.5rem;
+    margin-top: -$overlapping-gap;
 
     @include isTablet{
       width: 100%;
       padding: 2rem;
+      min-width: unset;
+      margin-top: unset;
 
       h3, h2{
         text-align: center;
