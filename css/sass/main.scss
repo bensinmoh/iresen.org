@@ -56,6 +56,67 @@
   flex-direction: column;
 }
 
+.sub-header{
+  background-color: $primaryColor;
+  padding: .75rem;
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: .9rem;
+    color: rgba($color: white, $alpha: .9);
+
+    div{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .block{
+        padding: 0 1rem;
+
+        &:not(:last-of-type()){
+          border-right: 1px solid rgba($color: white, $alpha: .1);
+        }
+
+        i{
+          margin-right: .5rem;
+        }
+
+        a{
+          text-decoration: none;
+          color: rgba($color: white, $alpha: .9);
+
+          &:hover{
+            color: white;
+          }
+        }
+
+        .short{
+          display: none;
+        }
+
+        @include isLarge{
+
+          .long{
+            display: none;
+          }
+
+          .short{
+            display: unset;
+          }
+        }
+      }
+    }
+
+    @include isPhone{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
 /* About */
 
 .section-about{
