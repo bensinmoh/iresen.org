@@ -65,6 +65,7 @@
     flex-direction: row;
     justify-content: space-between;
     font-size: .9rem;
+    padding: 0;
     color: rgba($color: white, $alpha: .9);
 
     div{
@@ -114,6 +115,17 @@
       justify-content: center;
       align-items: center;
     }
+  }
+}
+
+.nav-bar{
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
   }
 }
 
